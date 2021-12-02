@@ -1,32 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Card from './components/Card';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-const user = {
-  firstName: 'Imrak',
-  lastName: 'Residual',
-  avatar: 'https://placekitten.com/408/287'
-}
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
-function getUser(user) {
-  return `${user.firstName} ${user.lastName}`
-}
-
-function valUser(user) {
-  if (user) {
-    return <h1>Hola, {user.firstName} {user.lastName}</h1>
-  }
-  return <h1>Hola, Extraño</h1>
-
-}
-const name = "Imrak"
-const element = (
-  <div>{valUser(user)}
-    <img src={user.avatar} />
-  </div>
-)
-
-const container = document.getElementById("rooot")
-
-
-ReactDOM.render(<Card />, container);
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
