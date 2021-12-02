@@ -1,7 +1,6 @@
 import React from "react";
 import dai from "../images/dai.png"
 import "./styles/Card.css"
-import "bootstrap/dist/css/bootstrap.css"
 
 function Card() {
     return (
