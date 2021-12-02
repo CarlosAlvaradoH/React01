@@ -1,8 +1,9 @@
+@import '../../tokens';
 .card {
   margin-top: 20px;
   border: none;
   border-radius: 8px;
-  background: linear-gradient(to right, #A74CF2, #617BFB);
+  background: linear-gradient(to right, #A74CF2, $color-blue-01);
 }
 .Dai-Card {
   max-height: 140px;
@@ -14,11 +15,11 @@
 }
 .Dai-Card-Info h1{
   font-size: 23px;
-  color: white;
+  color: $color-white;
 }
 .Dai-Card-Info p{
   font-size: 11px;
-  color: white;
+  color: $color-white;
 }
 .Fitness-Add {
   display: block;

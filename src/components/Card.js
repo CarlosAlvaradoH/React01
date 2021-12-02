@@ -1,6 +1,7 @@
 import React from "react";
 import dai from "../images/dai.png"
-import "./styles/Card.css"
+import "./styles/Card.scss"
+import { Button } from 'react-bootstrap';
 
 function Card() {
     return (
@@ -15,6 +16,9 @@ function Card() {
                         <p>Parrafo dentro de class/card</p>
                     </div>
                 </div>
+                <Button size="lg">
+                    Show Message
+                </Button>
             </div>
         </div>
     )
